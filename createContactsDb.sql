@@ -1,0 +1,9 @@
+CREATE TABLE CONTACTS
+(
+    id INTEGER NOT NULL primary key GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+    firstname    VARCHAR(30),
+    lastname    VARCHAR(30),
+    telephone   VARCHAR(15),
+    email         VARCHAR(30),
+    created     TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+);
